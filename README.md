@@ -26,6 +26,6 @@ The bot will add titles to active members until their number (the number of admi
 
 You can change how often the bot starts by changing the parameter on line 60 in main.py
 
-Was the bot helpful to you? I am very happy, if it is ^^
+*Was the bot helpful to you? I am very happy, if it is ^^*
 
-For donations - EQC7QQ4yZGuNr-qJYOcg-w8hP7EdF29rok-d84fXTKRuUq0-
+*For donations - EQC7QQ4yZGuNr-qJYOcg-w8hP7EdF29rok-d84fXTKRuUq0-*
