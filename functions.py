@@ -80,6 +80,8 @@ async def set_custom_title(tg_id):
     cursor.execute(f'select owner from numbers_verify where tgid = {tg_id}')
     row = cursor.fetchone()
     if row is None:
+        await promote_user(tg_id, False)
+        await close_connection(connect)
         return
     (user_address,) = row
     await close_connection(connect)
