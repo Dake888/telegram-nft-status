@@ -78,13 +78,16 @@ async def promote_user(user_id, chat_manage_flag):
 async def set_custom_title(tg_id):
     connect, cursor = await open_connection()
     cursor.execute(f'select owner from numbers_verify where tgid = {tg_id}')
-    (user_address,) = cursor.fetchone()
+    row = cursor.fetchone()
+    if row is None:
+        return
+    (user_address,) = row
     await close_connection(connect)
 
     if user_address is not None:
         nfts_count = await get_user_nfts(user_address)
 
-        if not nfts_count and nfts_count > 0:
+        if nfts_count > 0:
             if nfts_count > 1:
                 text = nft_name
             else:
