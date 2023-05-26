@@ -90,7 +90,7 @@ async def set_custom_title(tg_id):
         nfts_count = await get_user_nfts(user_address)
 
         if nfts_count > 0:
-            if nfts_count > 1:
+            if nfts_count == 1:
                 text = nft_name
             else:
                 text = f'{nft_name}s'
