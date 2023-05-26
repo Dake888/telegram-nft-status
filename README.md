@@ -25,3 +25,7 @@ chat_id = ''
 The bot will add titles to active members until their number (the number of administrators in the group) exceeds 50. Then, the bot will remove the title from those who have been active most recently and add the title to those who have been active recently, but not has title, excluding members from exc_ids.
 
 You can change how often the bot starts by changing the parameter on line 60 in main.py
+
+*Was the bot helpful to you? I am very happy, if it is ^^*
+
+*For donations - EQC7QQ4yZGuNr-qJYOcg-w8hP7EdF29rok-d84fXTKRuUq0-*
