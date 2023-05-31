@@ -11,7 +11,7 @@ async def set_status():
     while True:
         active_ids = await get_updates()
 
-        if active_ids != []:
+        if active_ids is not None and active_ids != []:
             admin_ids = list()
 
             try:
@@ -39,7 +39,7 @@ async def set_status():
                                 if result['ok']:
                                     admin_ids.remove(j)
                                     await asyncio.sleep(1)
-                                    break
+
                                 else:
                                     err_code = result['error_code']
                                     err = result['description']

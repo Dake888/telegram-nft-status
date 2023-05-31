@@ -55,7 +55,7 @@ async def get_updates():
             if message['chat']['id'] == chat_id and not message['from']['is_bot']:
                 user_id = message['from']['id']
                 if len(ids) > 50:
-                    break
+                    return
                 if user_id not in ids:
                     ids.append(user_id)
 
